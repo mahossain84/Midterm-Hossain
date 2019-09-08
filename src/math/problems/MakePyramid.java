@@ -11,8 +11,19 @@ public class MakePyramid {
                            * * * *
                           * * * * *
                          * * * * * *
+  */
 
-        */
+        for(int i=0;i<30;i++) {  // take  30 numbers for the size of the pyramid
+            for(int j=0;j<30-i;j++) {
+                System.out.print(" ");
+            }
+
+            for (int k=0;k<=i;k++) {
+                System.out.print(" $");
+            }
+            System.out.println();
+        }
+
 
 
         }

@@ -1,5 +1,8 @@
 package datastructure;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class UseQueue {
 
 	public static void main(String[] args) {
@@ -9,6 +12,36 @@ public class UseQueue {
 		 * 
 		 */
 
-	}
+		Queue<String> queue = new LinkedList<String>();
 
+		//Adding elements:
+		queue.add("New York ");
+		queue.add("New Jersey");
+		queue.add("Delaware");
+		queue.add("Maryland");
+		queue.add("Virgina");
+		queue.add("Ohio");
+
+		System.out.println("Elements in Queue:"+queue);
+
+		//removing first element by using remove() method:
+		System.out.println("Removed element: "+queue.remove());
+
+
+		//getting new top of the Queue by using element() method:
+		System.out.println("New Top: "+queue.element());
+
+		//by using poll() method we will get remove amd return head of Queue (if Queue is empty returns will be null):
+		System.out.println("poll(): "+queue.poll());
+
+		// peek() method - it works same as element() method.
+
+
+		System.out.println("peek(): "+queue.peek());
+
+		//Again displaying the elements of Queue
+		System.out.println("Elements in Queue:"+queue);
+	}
 }
+
+

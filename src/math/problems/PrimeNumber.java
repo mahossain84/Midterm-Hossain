@@ -13,6 +13,24 @@ public class PrimeNumber {
 		 *
 		 */
 
-	}
 
+		int[] arr = new int[0];
+		for (int i = 2; i <= 1000000; i++) {
+			for (int j = 2; j <= i; j++) {
+				if (j == i) {
+					System.out.println(" "+i);
+				}
+				if (i % j == 0) {
+					break;
+				}
+			}
+
+		}
+		//int[] list = arr;
+		//ConnectToSqlDB.connectToSqlDatabase();
+		//ConnectToSqlDB connect = new ConnectToSqlDB();
+		//connect.insertDataFromArrayToSqlTable(list, "Prime_Numbers", "PN");
+
+		//connect.readDataBase("Prime_Numbers", "PN");
+	}
 }
