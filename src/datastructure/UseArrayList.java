@@ -19,7 +19,7 @@ public class UseArrayList {
 		array.add("Washington");
 		array.add("Florida");
 		array.add("Virgina");
-		System.out.println("All the dist after adding: " + array);
+		System.out.println("All the state after adding: " + array);
 
 		System.out.println("****************************");
 
@@ -38,12 +38,16 @@ public class UseArrayList {
 
 
 		System.out.println("******************************* ");
+
 		System.out.println("Getting state name using For Each loop:");
 
 		for (String st : array) {
 			System.out.println(st);
 
 		}
+
+
+
 	}
 
 }

@@ -13,14 +13,26 @@ public class LowestNumber {
 		 * Use one of the databases from mysql or mongodb to store and to retrieve.
 		 */
 		int  array[] = new int[]{211,110,99,34,67,89,67,456,321,456,78,90,45,32,56,78,90,54,32,123,67,5,679,54,32,65};
+		int lowestNum = array[0];
+		for(int i : array){
+			if (i< lowestNum){
+				lowestNum =1;
+
+			}
+
+		}
+
+		System.out.println("the lowest number:" + lowestNum);
 
 		//find lowest number from the array
 
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+		int [] newArray = new int[1];
+		newArray[0] = lowestNum;
 		List<String> lowestValue = new ArrayList<String>();
 		try {
-			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_lowestNumber", "column_lowestNumber");
-			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "column_lowestNumber");
+			connectToSqlDB.insertDataFromArrayToSqlTable(newArray, "tbl_lowestNumber", "SortingNumbers");
+			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "SortingNumbers");
 
 		} catch (Exception e) {
 			e.printStackTrace();

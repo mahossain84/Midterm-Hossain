@@ -26,7 +26,7 @@ public class FindMissingNumber {
         for(int i=0;i<array.length;i++) {
             total+=i;
         }
-        return(sum-total);  //out put should be 9
+        return(sum-total);
 
     }
 

@@ -1,8 +1,13 @@
 package math.problems;
 
+import databases.ConnectToSqlDB;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class PrimeNumber {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		/*
 		 * Find list of Prime numbers from number 2 to 1 million.
 		 * Try the best solution as possible.Which will take less CPU life cycle.
@@ -26,11 +31,14 @@ public class PrimeNumber {
 			}
 
 		}
-		//int[] list = arr;
-		//ConnectToSqlDB.connectToSqlDatabase();
-		//ConnectToSqlDB connect = new ConnectToSqlDB();
-		//connect.insertDataFromArrayToSqlTable(list, "Prime_Numbers", "PN");
+		int [] list = arr;
+		ConnectToSqlDB.connectToSqlDatabase();
+		ConnectToSqlDB connect = new ConnectToSqlDB();
+		connect.insertDataFromArrayToSqlTable(list, "Prime_Numbers", "Pt");
 
-		//connect.readDataBase("Prime_Numbers", "PN");
+		connect.readDataBase("Prime_Numbers", "Pt");
+
+
+
 	}
 }

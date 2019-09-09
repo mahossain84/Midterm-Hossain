@@ -14,7 +14,7 @@ public class Pattern {
 
 		int count = 1, j = 0;
 		int num = 100;
-		//ConnectDB connectDB = new ConnectDB();
+
 		List<String> storePattern = new ArrayList<String>();
 		int[] array1 = new int[40];
 
@@ -29,24 +29,6 @@ public class Pattern {
 			count++;
 		}
 		System.out.println(" ");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	}

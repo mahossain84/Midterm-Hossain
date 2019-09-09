@@ -18,6 +18,8 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
+		//String  textFile = " /Users/alamgir/Documents/Midterm19/MidtermJuly2019/src/data/self-driving-car "
+
 		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
 
