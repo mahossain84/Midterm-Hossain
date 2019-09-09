@@ -18,13 +18,26 @@ public class Palindrome {
 
     }
 
-    private static void  checkPalindrome(String word) {
-        String pla  = word.toUpperCase();
+    private static void checkPalindrome(String word) {
+        String pla = word.toUpperCase();
         String reverse = "";
-        for (int i = pla.length()-1;i>=0;i--){
+
+        for (int i = pla.length() - 1; i >= 0; i--) {
+            reverse = reverse + pla.charAt(i);
+
 
         }
+        if(pla.equals(reverse)) {
+            System.out.println("Yes it is a palindrome");
+        } else{
+            System.out.println("Not a palindrome");
+        }
+
+
     }
 
 
 }
+
+
+
