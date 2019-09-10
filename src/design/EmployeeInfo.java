@@ -21,16 +21,116 @@ public class EmployeeInfo implements Employee {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
-	int  employeeID;
-	String employeeInfo;
-	int calculateEmploySalary;
+	private int  employeeID;
+	private String employeeInfo;
+	private int calculateEmploySalary;
 	String employName;
 	int numberOfYearsWithCompany;
+	private char sex;
+	private int monthlySalary;
+	private int performance;
 
+	// default constructor
+	public EmployeeInfo(){
 
+	}
 
+	// parameterized constructor
 
-	
+	public EmployeeInfo(int employeeID, String employeeInfo, int calculateEmploySalary, String employName, int numberOfYearsWithCompany, char sex) {
+		this.employeeID = employeeID;
+		this.employeeInfo = employeeInfo;
+		this.calculateEmploySalary = calculateEmploySalary;
+		this.employName = employName;
+		this.numberOfYearsWithCompany = numberOfYearsWithCompany;
+		this.sex = sex;
+	}
+
+	public EmployeeInfo(int employeeID, String employeeInfo, int calculateEmploySalary, String employName, int numberOfYearsWithCompany, char sex, int monthlySalary,
+						int performance ) {
+		this.employeeID = employeeID;
+		this.employeeInfo = employeeInfo;
+		this.calculateEmploySalary = calculateEmploySalary;
+		this.employName = employName;
+		this.numberOfYearsWithCompany = numberOfYearsWithCompany;
+		this.sex = sex;
+		this.monthlySalary = monthlySalary;
+		this.performance = performance;
+	}
+
+	// getter setter method for Encapsulation
+
+	public static String getCompanyName() {
+		return companyName;
+	}
+
+	public static void setCompanyName(String companyName) {
+		EmployeeInfo.companyName = companyName;
+	}
+
+	public int getEmployeeID() {
+		return employeeID;
+	}
+
+	public void setEmployeeID(int employeeID) {
+		this.employeeID = employeeID;
+	}
+
+	public String getEmployeeInfo() {
+		return employeeInfo;
+	}
+
+	public void setEmployeeInfo(String employeeInfo) {
+		this.employeeInfo = employeeInfo;
+	}
+
+	public int getCalculateEmploySalary() {
+		return calculateEmploySalary;
+	}
+
+	public void setCalculateEmploySalary(int calculateEmploySalary) {
+		this.calculateEmploySalary = calculateEmploySalary;
+	}
+
+	public String getEmployName() {
+		return employName;
+	}
+
+	public void setEmployName(String employName) {
+		this.employName = employName;
+	}
+
+	public int getNumberOfYearsWithCompany() {
+		return numberOfYearsWithCompany;
+	}
+
+	public void setNumberOfYearsWithCompany(int numberOfYearsWithCompany) {
+		this.numberOfYearsWithCompany = numberOfYearsWithCompany;
+	}
+
+	public char getSex() {
+		return sex;
+	}
+
+	public void setSex(char sex) {
+		this.sex = sex;
+	}
+
+	public int getMonthlySalary() {
+		return monthlySalary;
+	}
+
+	public void setMonthlySalary(int monthlySalary) {
+		this.monthlySalary = monthlySalary;
+	}
+
+	public int getPerformance() {
+		return performance;
+	}
+
+	public void setPerformance(int performance) {
+		this.performance = performance;
+	}
 	/*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
@@ -63,12 +163,12 @@ public class EmployeeInfo implements Employee {
 		int bonus ;
 		int bonusWithSalary;
 
-g
+
 
 		int total=0;
 		return total;
 	}
-	
+
 	/*
 	 * This methods should calculate Employee Pension based on salary and numbers of years with the company.
 	 * Then it will return the total pension. So you need to implement the logic.
@@ -113,17 +213,17 @@ g
 		return 0;
 	}
 
-	@Override
+
 	public void benefitLayout() {
 
 	}
 
-	@Override
+
 	public void familyLeave() {
 
 	}
 
-	@Override
+
 	public void yearlyVacation() {
 
 	}

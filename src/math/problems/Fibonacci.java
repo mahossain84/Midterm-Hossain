@@ -8,7 +8,7 @@ public class Fibonacci {
           Write 40 Fibonacci numbers with java.
           0,1,1,2,3,5,8,13
          */
-<<<<<<< HEAD
+
         int fibo[] = new int[40];
         for (int i = 0; i < 40; i++) {
             if (i < 2) {
@@ -18,7 +18,7 @@ public class Fibonacci {
             }
         }
         System.out.println(Arrays.toString(fibo));
-=======
+
 
          int fib []= new int[40];
         for(int i=0;i<40;i++){
@@ -33,8 +33,8 @@ public class Fibonacci {
         System.out.println(Arrays.toString(fib));
     }
 
->>>>>>> 6e10a4d832573455cd681e02fc5bd49f2aae84e6
+
     }
-}
+
 
 

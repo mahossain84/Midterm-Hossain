@@ -20,15 +20,25 @@ public interface Employee {
 	//calculate employee salary
 	public int calculateSalary();
 	
-	//employee benefit
-	public void benefitLayout();
+	//employee bonus
+	public static void joiningBonus(){
+		System.out.println("all employ eligible to get joining bonus $3000");
+
+	}
 
 	// employ familyLeave
 
-	public void familyLeave();
+	public static void familyLeave() {
+		System.out.println("only full time employ eligible to get yearly 80 hours family leave");
+
+	}
 
 	// employ yearlyVacation();
-	public void yearlyVacation();
+	public static void yearlyVacation(){
+		System.out.println("all employ allow to get 2 weeks family vacation ");
+	}
+
+	//
 
 
 
