@@ -1,6 +1,7 @@
 package algorithm;
 
 public class Sort {
+
     long executionTime = 0;
     /*
      * Please implement all the sorting algorithm. Feel free to add helper methods.
